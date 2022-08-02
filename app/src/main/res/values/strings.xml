@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Simulator</string>
+    <string name="txt_simulator">Matches simulator.</string>
+    <string name="textviewHomeTeam">Home Team</string>
+    <string name="cd_home_team">Imagem do time mandante.</string>
+    <string name="home_team_score">99</string>
+    <string name="x">X</string>
+    <string name="cd_away_team">Imagem do time adversário.</string>
+    <string name="textview_away_team">TextView</string>
+    <string name="away_team_score">99</string>
+    <string name="txt_versus">X</string>
 </resources>

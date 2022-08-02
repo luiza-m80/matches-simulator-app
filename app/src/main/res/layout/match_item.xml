@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_default">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewHomeTeam"
+            android:layout_width="@dimen/team_image_size"
+            android:layout_height="@dimen/team_image_size"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginTop="@dimen/margin_default"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars"
+            android:contentDescription="@string/cd_home_team" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewHomeTeam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_marginBottom="@dimen/margin_default"
+            android:text="@string/textviewHomeTeam"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewHomeTeam"
+            app:layout_constraintStart_toStartOf="@+id/imageViewHomeTeam"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewHomeTeam" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewHomeTeamScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_team_score"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewHomeTeam"
+            app:layout_constraintEnd_toStartOf="@+id/textViewVersus"
+            app:layout_constraintStart_toEndOf="@+id/imageViewHomeTeam"
+            app:layout_constraintTop_toTopOf="@+id/imageViewHomeTeam" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewVersus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/x"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewHomeTeam"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageViewHomeTeam" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewAwayTeam"
+            android:layout_width="@dimen/team_image_size"
+            android:layout_height="@dimen/team_image_size"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_marginEnd="@dimen/margin_default"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars"
+            android:contentDescription="@string/cd_away_team" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewAwayTeam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_default"
+            android:text="@string/textview_away_team"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewAwayTeam"
+            app:layout_constraintStart_toStartOf="@+id/imageViewAwayTeam"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewAwayTeam"
+            tools:text="Away Team"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewAwayTeamScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/away_team_score"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewAwayTeam"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewAwayTeam"
+            app:layout_constraintStart_toEndOf="@+id/textViewVersus"
+            app:layout_constraintTop_toTopOf="@+id/imageViewAwayTeam"
+            app:layout_constraintVertical_bias="0.504" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
