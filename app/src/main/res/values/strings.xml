@@ -9,4 +9,5 @@
     <string name="textview_away_team">TextView</string>
     <string name="away_team_score">99</string>
     <string name="txt_versus">X</string>
+    <string name="error_api">Unexpected error.</string>
 </resources>

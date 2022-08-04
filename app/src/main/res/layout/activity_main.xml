@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivityJava">
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipeRefreshLayoutMatches"
@@ -17,11 +17,10 @@
         app:layout_constraintTop_toTopOf="parent" >
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/reciclerViewMatches"
+        android:id="@+id/recyclerViewMatches"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/match_item"
-        tools:itemCount="3"/>
+        tools:listitem="@layout/match_item" />
 </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
